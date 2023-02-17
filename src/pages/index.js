@@ -1,13 +1,11 @@
 import Head from "next/head";
-import Image from "next/image";
-import { Inter } from "@next/font/google";
-import styles from "@/styles/Home.module.css";
 import Hello from "@/Components/hello";
 import About from "@/Components/About";
 
 import { Roboto } from '@next/font/google'
 import Skills from "@/Components/Skills";
 import Projects from "@/Components/Projects";
+import AboutMe from "@/Components/AboutMe";
 
 const roboto = Roboto({
   weight: '400',
@@ -26,6 +24,7 @@ export default function Home() {
       <div className={roboto.className}>
         <Hello />
         <About/>
+        <AboutMe/>
         <Skills/>
         <Projects/>
       </div>

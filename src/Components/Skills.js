@@ -29,41 +29,56 @@ const Skills = () => {
               designs.
             </p>
             <div className="flex flex-row flex-wrap justify-center sm:justify-start">
-              <Image
-                alt="html"
-                className="mr-3 my-3 invert transform transition duration-100 hover:scale-110 "
-                height={50}
-                width={50}
-                src={html}
-              ></Image>
-              <Image
-                alt="css"
-                className="mx-3 my-3 invert transform transition duration-100 hover:scale-110"
-                height={50}
-                width={50}
-                src={css}
-              ></Image>
-              <Image
-                alt="javascript"
-                className="mx-3 my-3 invert transform transition duration-100 hover:scale-110"
-                height={50}
-                width={50}
-                src={javascript}
-              ></Image>
-              <Image
-                alt="react"
-                className="mx-3 my-3 invert transform transition duration-100 hover:scale-110"
-                height={50}
-                width={50}
-                src={react}
-              ></Image>
-              <Image
-                alt="github"
-                className="mx-3 my-3 invert transform transition duration-100 hover:scale-110"
-                height={50}
-                width={50}
-                src={github}
-              ></Image>
+              <div>
+                <Image
+                  alt="html"
+                  className="mx-3 my-3 invert transform transition duration-100 hover:scale-110 "
+                  height={50}
+                  width={50}
+                  src={html}
+                ></Image>
+                <p className="text-center text-gray-400 text-xs">html</p>
+              </div>
+              <div>
+                <Image
+                  alt="css"
+                  className="mx-3 my-3 invert transform transition duration-100 hover:scale-110"
+                  height={50}
+                  width={50}
+                  src={css}
+                ></Image>
+                <p className="text-center text-gray-400 text-xs">css</p>
+              </div>
+              <div>
+                <Image
+                  alt="javascript"
+                  className="mx-3 my-3 invert transform transition duration-100 hover:scale-110"
+                  height={50}
+                  width={50}
+                  src={javascript}
+                ></Image>
+                <p className="text-center text-gray-400 text-xs">javascript</p>
+              </div>
+              <div>
+                <Image
+                  alt="react"
+                  className="mx-3 my-3 invert transform transition duration-100 hover:scale-110"
+                  height={50}
+                  width={50}
+                  src={react}
+                ></Image>
+                <p className="text-center text-gray-400 text-xs">react</p>
+              </div>
+              <div>
+                <Image
+                  alt="github"
+                  className="mx-3 my-3 invert transform transition duration-100 hover:scale-110"
+                  height={50}
+                  width={50}
+                  src={github}
+                ></Image>
+                <p className="text-center text-gray-400 text-xs">github</p>
+              </div>
             </div>
           </div>
         </div>

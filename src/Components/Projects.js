@@ -19,19 +19,19 @@ const projects = [
     tech: ["React.js,", "HTML,", "CSS"],
     desc: "NewsiFy aims to provide a well organized and category divided news feed.",
     link: "https://github.com/Vinayselukar21/NewsApp-React.js",
-  },
+  }
 ];
 const Projects = () => {
   return (
     <Layout>
-      <div className="w-full flex flex-col sm:h-90vh ">
+      <div className="w-full flex flex-col">
         <h1 className="text-3xl sm:text-7xl text-gray-400 font-black my-5">
           Projects
         </h1>
         <div className="flex flex-row flex-wrap">
           {projects.map((item) => (
-            <div class="w-full md:w-1/2 lg:w-1/2 lg:pl-2 lg:pr-2 my-2">
-              <div class="bg-gray-600 rounded-lg m-h-64 p-1 transform hover:translate-y-2 hover:shadow-xl transition duration-300">
+            <div class="w-1/3 lg:pl-2 lg:pr-2 my-2">
+              <div class="bg-gray-600  m-h-64 p-1 transform hover:scale-105  hover:bg-teal transition duration-300">
                 {/* <figure class="mb-2">
                <img
                  src="https://srv-cdn.onedio.com/store/bf2cbc886120f284ef46fd92a48f5fb58c62e6a50fbdf8fa796d057dd0ddc242.png"
@@ -39,7 +39,7 @@ const Projects = () => {
                  class="h-64 ml-auto mr-auto"
                />
              </figure> */}
-                <div class="rounded-lg p-4 bg-back-col flex flex-col">
+                <div class="p-4 h-72 bg-back-col flex flex-col">
                   <div>
                     <h5 class="text-white text-2xl font-bold leading-none">
                       {item.title}
