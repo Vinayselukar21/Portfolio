@@ -7,6 +7,7 @@ import About from "@/Components/About";
 
 import { Roboto } from '@next/font/google'
 import Skills from "@/Components/Skills";
+import Projects from "@/Components/Projects";
 
 const roboto = Roboto({
   weight: '400',
@@ -26,6 +27,7 @@ export default function Home() {
         <Hello />
         <About/>
         <Skills/>
+        <Projects/>
       </div>
     </>
   );
