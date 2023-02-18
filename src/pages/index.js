@@ -1,11 +1,14 @@
 import Head from "next/head";
-import Hello from "@/Components/hello";
+import Navbar from "@/Components/Navbar";
 import About from "@/Components/About";
 
 import { Roboto } from '@next/font/google'
 import Skills from "@/Components/Skills";
 import Projects from "@/Components/Projects";
 import AboutMe from "@/Components/AboutMe";
+import Layout from "@/Components/Layout";
+import ContactMe from "@/Components/ContactMe";
+import Footer from "@/Components/Footer";
 
 const roboto = Roboto({
   weight: '400',
@@ -22,12 +25,16 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={roboto.className}>
-        <Hello />
+        <Navbar />
+        <Layout>
         <About/>
         <AboutMe/>
         <Skills/>
         <Projects/>
-      </div>
+        <ContactMe/>
+        </Layout>
+        <Footer/>
+        </div>
     </>
   );
 }

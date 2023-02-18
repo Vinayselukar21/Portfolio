@@ -1,4 +1,3 @@
-import Layout from "./Layout";
 import Lottie from "lottie-react";
 import Image from "next/image";
 import Codeanimation from "../../public/Animations/about-sec-lottie.json";
@@ -11,8 +10,11 @@ import github from "../../public/Images/git.png";
 const Skills = () => {
   return (
     <>
-      <Layout>
-        <div className="flex flex-col sm:flex-row w-full sm:h-60vh">
+      <div className="flex flex-col w-full h-screen">
+      <h1 className="text-3xl sm:text-5xl font-black text-gray-300 border-b border-teal pb-5 mb-5">
+              What i do.
+            </h1>
+        <div className="flex flex-col sm:flex-row w-full">
           <div className="w-full sm:w-1/2 flex justify-center sm:m-0">
             <Lottie
               className="w-3/4"
@@ -21,10 +23,8 @@ const Skills = () => {
             />
           </div>
           <div className="w-full sm:w-1/2 flex flex-col my-5 sm:my-10">
-            <h1 className="text-3xl sm:text-5xl font-black mb-3 text-gray-400">
-              What i do.
-            </h1>
-            <p className="text-xl w-full sm:w-4/5 mb-3 text-gray-500">
+            
+            <p className="text-xl w-full sm:w-4/5 mb-3 text-gray-400">
               A web developer specializing in frontend and making responsive web
               designs.
             </p>
@@ -82,7 +82,7 @@ const Skills = () => {
             </div>
           </div>
         </div>
-      </Layout>
+      </div>
     </>
   );
 };
