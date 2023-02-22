@@ -12,7 +12,8 @@ module.exports = {
     extend: {
       colors:{
         "back-col":"#141030",
-        "teal":"#03fcf4"
+        "teal":"#03fcf4",
+        "dark-teal":"#187173",
       },
       height:{
         "90vh":"90vh",

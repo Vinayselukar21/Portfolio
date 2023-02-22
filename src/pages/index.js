@@ -1,21 +1,46 @@
 import Head from "next/head";
 import Navbar from "@/Components/Navbar";
 import About from "@/Components/About";
-
-import { Roboto } from '@next/font/google'
+import { useEffect } from "react";
+import Image from "next/image";
+import { Roboto } from "@next/font/google";
 import Skills from "@/Components/Skills";
 import Projects from "@/Components/Projects";
 import AboutMe from "@/Components/AboutMe";
 import Layout from "@/Components/Layout";
 import ContactMe from "@/Components/ContactMe";
 import Footer from "@/Components/Footer";
+import upicon from "../../public/icons/top-icon.png"
 
 const roboto = Roboto({
-  weight: '400',
-  subsets: ['latin'],
-})
+  weight: "400",
+  subsets: ["latin"],
+});
 
 export default function Home() {
+  function TopEvent() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+  // When the user scrolls down 20px from the top of the document, show the button
+  function scrollFunction() {
+    if (
+      document.body.scrollTop > 20 ||
+      document.documentElement.scrollTop > 20
+    ) {
+      document.getElementById("topButton").style.visibility = "visible";
+    } else {
+      document.getElementById("topButton").style.visibility = "hidden";
+    }
+  }
+  useEffect(() => {
+    window.onscroll = function () {
+      scrollFunction();
+    };
+    window.onload = function () {
+      scrollFunction();
+    };
+  });
   return (
     <>
       <Head>
@@ -24,17 +49,26 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={roboto.className}>
+      <div className={roboto.className} style={{ backgroundColor: "#141030" }}>
         <Navbar />
         <Layout>
-        <About/>
-        <AboutMe/>
-        <Skills/>
-        <Projects/>
-        <ContactMe/>
+          <About />
+          <AboutMe />
+          <Skills />
+          <Projects />
+          <ContactMe />
         </Layout>
-        <Footer/>
+        <div className="fixed bottom-0 w-full pr-10">
+          <button
+            onClick={TopEvent}
+            id="topButton"
+            className="my-8 float-right px-2 py-2 bg-dark-teal text-white text-sm font-bold tracking-wide rounded-full focus:outline-none"
+          >
+            <Image height={30} src={upicon}></Image>
+          </button>
         </div>
+        <Footer />
+      </div>
     </>
   );
 }

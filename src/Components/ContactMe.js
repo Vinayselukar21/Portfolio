@@ -10,7 +10,7 @@ import linkedin from "../../public/icons/linkedin.png";
 const ContactMe = () => {
   return (
     <>
-      <div className="flex flex-col sm:flex-row w-full">
+      <div className="flex flex-col sm:flex-row w-full" id="contact">
         <div className="w-full flex flex-col my-5 sm:my-10">
           <h1 className="text-3xl sm:text-5xl font-black text-gray-300 border-b border-teal pb-5 mb-5">
             Get In Touch.

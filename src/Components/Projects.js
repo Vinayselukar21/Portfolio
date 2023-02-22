@@ -24,16 +24,16 @@ const projects = [
 const Projects = () => {
   return (
     <>
-      <div className="w-full flex flex-col sm:h-screen">
+      <div className="w-full flex flex-col sm:h-screen" id="projects">
         <h1 className="text-3xl sm:text-5xl text-gray-300 font-black my-5 border-b border-teal pb-5 ">
           Some Noteworthey Projects.
         </h1>
         <div className="flex flex-wrap">
           {projects.map((item) => (
             <div class="w-full sm:w-1/3 lg:pl-2 lg:pr-2 my-2 drop-shadow-2xl rounded">
-              <div class="bg-gray-600  m-h-64 p-1 transform hover:scale-105 transition duration-300 rounded">
+              <div class="bg-gray-800  m-h-64 p-1 transform hover:scale-105 transition duration-300 rounded">
                 
-              <div class="p-4 h-72 contrast-200 flex flex-col">
+              <div class="p-4 h-72 bg-gray-800 flex flex-col">
                 <div className="flex justify-between">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

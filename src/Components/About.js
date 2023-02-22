@@ -7,7 +7,7 @@ import twitter from "../../public/icons/twitter.png"
 import linkedin from "../../public/icons/linkedin.png"
 const About=()=>{
     return<>
-    <div className="text-gray-500 flex flex-col h-screen justify-center">
+    <div className="text-gray-500 flex flex-col h-90vh sm:pt-10">
         <div className="w-full flex flex-col ">
             <p className="text-xl mt-5 mb-3 text-teal">Hi, my name is</p>
             <h1 className="text-3xl sm:text-7xl font-black mb-3 text-gray-200">Vinay Selukar.</h1>
