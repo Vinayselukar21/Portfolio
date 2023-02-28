@@ -6,12 +6,13 @@ import css from "../../public/Images/css.png";
 import javascript from "../../public/Images/js.png";
 import react from "../../public/Images/react.png";
 import github from "../../public/Images/git.png";
+import { skills } from "@/Data";
 
 const Skills = () => {
   return (
     <>
-      <div className="flex flex-col w-full h-screen">
-      <h1 className="text-3xl sm:text-5xl font-black text-gray-300 border-b border-teal pb-5 mb-5">
+      <div className="flex flex-col w-full sm:h-screen my-10 ">
+      <h1 className="text-3xl sm:text-5xl font-black text-gray-300 border-b border-teal pb-5 mb-5 ">
               What i do.
             </h1>
         <div className="flex flex-col sm:flex-row w-full">
@@ -25,8 +26,7 @@ const Skills = () => {
           <div className="w-full sm:w-1/2 flex flex-col my-5 sm:my-10">
             
             <p className="text-xl w-full sm:w-4/5 mb-3 text-gray-400">
-              A web developer specializing in frontend and making responsive web
-              designs.
+              {skills.description}
             </p>
             <div className="flex flex-row flex-wrap justify-center sm:justify-start">
               <div>

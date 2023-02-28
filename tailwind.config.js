@@ -21,7 +21,7 @@ module.exports = {
         "70vh":"70vh",
         "60vh":"60vh",
         "50vh":"50vh"
-      }
+      },
     },
   },
   plugins: [],

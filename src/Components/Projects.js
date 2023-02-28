@@ -1,36 +1,17 @@
 import Layout from "./Layout";
 import Link from "next/link";
+import { projects } from "@/Data";
 
-const projects = [
-  {
-    title: "DeCarbonUs",
-    tech: ["Next.js,", "React.js,", "Tailwind"],
-    desc: "DeCarbonUs is an App-based solution to help fight climate change by facilitating individuals to reduce and control their carbon footprint.",
-    link: "https://decarbonus.co",
-  },
-  {
-    title: "Food Order App",
-    tech: ["React.js,", "HTML,", "CSS"],
-    desc: "DeCarbonUs is an App-based solution to help fight climate change by facilitating individuals to reduce and control their carbon footprint.",
-    link: "https://github.com/Vinayselukar21/Food-Order-Web-App",
-  },
-  {
-    title: "NewsiFy",
-    tech: ["React.js,", "HTML,", "CSS"],
-    desc: "NewsiFy aims to provide a well organized and category divided news feed.",
-    link: "https://github.com/Vinayselukar21/NewsApp-React.js",
-  },
-];
 const Projects = () => {
   return (
     <>
-      <div className="w-full flex flex-col sm:h-screen" id="projects">
+      <div className="w-full flex flex-col mb-20" id="projects">
         <h1 className="text-3xl sm:text-5xl text-gray-300 font-black my-5 border-b border-teal pb-5 ">
           Some Noteworthey Projects.
         </h1>
         <div className="flex flex-wrap">
           {projects.map((item) => (
-            <div class="w-full sm:w-1/3 lg:pl-2 lg:pr-2 my-2 drop-shadow-2xl rounded">
+            <div class="w-full sm:w-full md:w-full lg:w-1/3  lg:pl-2 lg:pr-2 my-2 drop-shadow-2xl rounded">
               <div class="bg-gray-800  m-h-64 p-1 transform hover:scale-105 transition duration-300 rounded">
                 
               <div class="p-4 h-72 bg-gray-800 flex flex-col">
