@@ -18,7 +18,7 @@ const Skills = () => {
         <div className="flex flex-col sm:flex-row w-full">
           <div className="w-full sm:w-1/2 flex justify-center sm:m-0">
             <Lottie
-              className="w-3/4"
+              className="w-3/4 2xl:w-1/2"
               animationData={Codeanimation}
               loop={true}
             />

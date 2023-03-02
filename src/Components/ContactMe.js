@@ -18,7 +18,8 @@ const ContactMe = () => {
           <div className="flex flex-col sm:flex-row">
             <div className="w-full sm:w-3/5 flex justify-center sm:m-0">
               <Lottie
-                className="w-3/4 h-3/4"
+                // className="w-3/4 h-3/4 "
+                className="w-3/4 2xl:w-1/2"
                 animationData={contactani}
                 loop={true}
               />

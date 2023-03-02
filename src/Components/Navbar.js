@@ -24,11 +24,11 @@ function classNames(...classes) {
 export default function Navbar() {
   const text = "< VS />";
   return (
-    <Headroom>
+    <Headroom className="fixed w-full">
       <Disclosure as="nav">
         {({ open }) => (
           <>
-            <div className="mx-auto px-2 sm:px-6 lg:px-8  w-full py-2 bg-back-col z-30">
+            <div className=" w-full mx-auto px-2 sm:px-6 lg:px-8 2xl:px-20  py-2 2xl:py-4 bg-back-col z-30 ">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
