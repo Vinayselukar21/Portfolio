@@ -9,7 +9,7 @@ import linkedin from "../../public/icons/linkedin.png"
 
 const About=()=>{
     return<>
-    <div className="text-gray-500 flex flex-col sm:h-screen pt-10 md:pt-0 justify-center">
+    <div className="text-gray-500 flex flex-col h-screen  justify-center">
         <div className="w-full flex flex-col align-middle 2xl:px-20 ">
             <p className="text-sm sm:text-xl mt-5 mb-3 text-teal">Hi, my name is</p>
             <h1 className="text-3xl sm:text-7xl md:text-5xl lg:text-7xl font-black mb-2 sm:mb-3 text-gray-200">{about.name}</h1>
