@@ -1,6 +1,6 @@
-import { Disclosure} from "@headlessui/react";
+import { Disclosure } from "@headlessui/react";
 import React from "react";
-import { Bars3Icon,  XMarkIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import { Pacifico } from "@next/font/google";
 import Headroom from "react-headroom";
@@ -11,10 +11,15 @@ const pacifico = Pacifico({
 });
 
 const navigation = [
-  { name: "About Me",target:"", href: "#aboutMe", current: false },
-  { name: "Projects",target:"", href: "#projects", current: false },
-  { name: "Resume", target:"_blank", href:"https://drive.google.com/file/d/1PAauRSEI9zx3NAjlTZZ9byNoUeMUvVY4/view?usp=share_link", current: false },
-  { name: "Contact", target:"", href: "#contact", current: false },
+  { name: "About Me", target: "", href: "#aboutMe", current: false },
+  { name: "Projects", target: "", href: "#projects", current: false },
+  {
+    name: "Resume",
+    target: "_blank",
+    href: "https://drive.google.com/file/d/1PAauRSEI9zx3NAjlTZZ9byNoUeMUvVY4/view?usp=share_link",
+    current: false,
+  },
+  { name: "Contact", target: "", href: "#contact", current: false },
 ];
 
 function classNames(...classes) {
@@ -28,7 +33,7 @@ export default function Navbar() {
       <Disclosure as="nav">
         {({ open }) => (
           <>
-            <div className=" w-full mx-auto px-2 sm:px-6 lg:px-8 2xl:px-20  py-2 2xl:py-4 bg-back-col z-30 ">
+            <div className=" w-full mx-auto px-2 sm:px-6 lg:px-8 2xl:px-20  py-2 2xl:py-4 bg-col z-30 ">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
@@ -60,7 +65,7 @@ export default function Navbar() {
                           className={classNames(
                             item.current
                               ? "bg-gray-900 text-white"
-                              : "text-gray-300 hover:bg-gray-700 hover:text-teal",
+                              : "text-gray-300 hover:bg-gray-900 hover:text-teal",
                             "px-3 py-2 rounded-md text-sm font-medium"
                           )}
                           aria-current={item.current ? "page" : undefined}
@@ -75,7 +80,7 @@ export default function Navbar() {
             </div>
 
             <Disclosure.Panel className="sm:hidden">
-              <div className="space-y-1 px-2 pt-2 pb-3 bg-back-col text-center border-b border-teal">
+              <div className="space-y-1 px-2 pt-2 pb-3 text-center border-b border-teal">
                 {navigation.map((item) => (
                   <Disclosure.Button
                     key={item.name}
@@ -84,7 +89,7 @@ export default function Navbar() {
                     className={classNames(
                       item.current
                         ? "bg-gray-900 text-white"
-                        : "text-gray-300 hover:bg-gray-700 hover:text-white",
+                        : "text-gray-300 hover:bg-gray-900 hover:text-teal",
                       "block px-3 py-2 rounded-md text-base font-medium"
                     )}
                     aria-current={item.current ? "page" : undefined}

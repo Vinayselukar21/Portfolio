@@ -10,7 +10,7 @@ import AboutMe from "@/Components/AboutMe";
 import Layout from "@/Components/Layout";
 import ContactMe from "@/Components/ContactMe";
 import Footer from "@/Components/Footer";
-import upicon from "../../public/icons/top-icon.png"
+import upicon from "../../public/icons/top-icon.png";
 
 const roboto = Roboto({
   weight: "400",
@@ -49,7 +49,14 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={roboto.className} style={{ backgroundColor: "#141030" }}>
+      <div
+        className={roboto.className}
+        style={{
+          background: " rgb(0,142,255)",
+          background:
+            "linear-gradient(45deg, rgba(0,142,255,1) 0%, rgba(73,80,83,1) 21%, rgba(17,81,111,1) 48%, rgba(8,97,139,1) 66%, rgba(31,66,82,1) 90%)",
+        }}
+      >
         <Navbar />
         <Layout>
           <About />

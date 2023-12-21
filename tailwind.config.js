@@ -10,17 +10,17 @@ module.exports = {
   ],
   theme: {
     extend: {
-      colors:{
-        "back-col":"#141030",
-        "teal":"#03fcf4",
-        "dark-teal":"#187173",
+      colors: {
+        "back-col": "#141030",
+        teal: "#03fcf4",
+        "dark-teal": "#187173",
       },
-      height:{
-        "90vh":"90vh",
-        "80vh":"80vh",
-        "70vh":"70vh",
-        "60vh":"60vh",
-        "50vh":"50vh"
+      height: {
+        "90vh": "90vh",
+        "80vh": "80vh",
+        "70vh": "70vh",
+        "60vh": "60vh",
+        "50vh": "50vh",
       },
     },
   },

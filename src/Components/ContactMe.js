@@ -10,7 +10,10 @@ import linkedin from "../../public/icons/linkedin.png";
 const ContactMe = () => {
   return (
     <>
-      <div className="flex flex-col sm:flex-row w-full mb-10 sm:mb-0" id="contact">
+      <div
+        className="flex flex-col sm:flex-row w-full mb-10 sm:mb-0"
+        id="contact"
+      >
         <div className="w-full flex flex-col my-5 sm:my-10">
           <h1 className="text-3xl sm:text-5xl font-black text-gray-300 border-b border-teal pb-5 mb-5">
             Get In Touch.
@@ -27,7 +30,7 @@ const ContactMe = () => {
             <div className="flex flex-col w-full sm:w-2/5 ">
               <h1 className="text-xl w-full text-gray-400">
                 My inbox is always open, <br />
-                Whether it is work or just want to say Hi.
+                whether it is work or just want to say Hi.
               </h1>
 
               <div className="my-5 flex flex-row items-center">
@@ -47,7 +50,7 @@ const ContactMe = () => {
               <Link
                 target={"_blank"}
                 href="mailto:vselukar2102@gmail.com"
-                className="py-3 px-5  border-2 border-teal rounded w-32 text-center text-teal hover:bg-teal hover:text-back-col my-5"
+                className="py-3 px-5  border-2 border-teal rounded w-32 text-center text-teal hover:bg-teal my-5 hover:text-gray-900"
               >
                 Contact
               </Link>
