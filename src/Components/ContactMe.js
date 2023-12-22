@@ -28,7 +28,7 @@ const ContactMe = () => {
               />
             </div>
             <div className="flex flex-col w-full sm:w-2/5 ">
-              <h1 className="text-xl w-full text-gray-400">
+              <h1 className="text-xl w-full text-gray-300">
                 My inbox is always open, <br />
                 whether it is work or just want to say Hi.
               </h1>
@@ -43,7 +43,7 @@ const ContactMe = () => {
                 <p className="text-xl text-gray-300">Nagpur, Maharashtra</p>
               </div>
 
-              <h1 className="text-xl w-full text-gray-400">
+              <h1 className="text-xl w-full text-gray-300">
                 Open to new Opportunities
               </h1>
 

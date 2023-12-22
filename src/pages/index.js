@@ -1,15 +1,15 @@
-import Head from "next/head";
-import Navbar from "@/Components/Navbar";
 import About from "@/Components/About";
-import { useEffect } from "react";
-import Image from "next/image";
-import { Roboto } from "@next/font/google";
-import Skills from "@/Components/Skills";
-import Projects from "@/Components/Projects";
 import AboutMe from "@/Components/AboutMe";
-import Layout from "@/Components/Layout";
 import ContactMe from "@/Components/ContactMe";
+import { Experience } from "@/Components/Experience";
 import Footer from "@/Components/Footer";
+import Layout from "@/Components/Layout";
+import Navbar from "@/Components/Navbar";
+import Projects from "@/Components/Projects";
+import { Roboto } from "@next/font/google";
+import Head from "next/head";
+import Image from "next/image";
+import { useEffect } from "react";
 import upicon from "../../public/icons/top-icon.png";
 
 const roboto = Roboto({
@@ -49,21 +49,15 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div
-        className={roboto.className}
-        style={{
-          background: " rgb(0,142,255)",
-          background:
-            "linear-gradient(45deg, rgba(0,142,255,1) 0%, rgba(73,80,83,1) 21%, rgba(17,81,111,1) 48%, rgba(8,97,139,1) 66%, rgba(31,66,82,1) 90%)",
-        }}
-      >
+      <div className={roboto.className}>
         <Navbar />
         <Layout>
           <About />
           <AboutMe />
-          <Skills />
           <Projects />
+          <Experience />
           <ContactMe />
+          <Footer />
         </Layout>
         <div className="fixed bottom-0 w-full pr-10">
           <button
@@ -74,7 +68,6 @@ export default function Home() {
             <Image height={30} src={upicon}></Image>
           </button>
         </div>
-        <Footer />
       </div>
     </>
   );

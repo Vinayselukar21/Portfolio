@@ -18,10 +18,10 @@ const About = () => {
           <h1 className="text-3xl sm:text-7xl md:text-5xl lg:text-7xl font-black mb-2 sm:mb-3 text-gray-200">
             {about.name}
           </h1>
-          <h1 className="text-2xl sm:text-7xl md:text-5xl lg:text-7xl font-black mb-2 sm:mb-3 text-gray-400">
+          <h1 className="text-2xl sm:text-7xl md:text-5xl lg:text-7xl font-black mb-2 sm:mb-3 text-gray-300">
             I build things for the web.
           </h1>
-          <p className="text-lg w-full sm:w-1/2 md:w-3/4 text-gray-400 2xl:w-1/2">
+          <p className="text-lg w-full sm:w-1/2 md:w-3/4 text-gray-300 2xl:w-1/2">
             {about.description}
           </p>
           <div className="flex flex-row my-5">

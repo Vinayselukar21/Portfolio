@@ -4,6 +4,9 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 import { Pacifico } from "@next/font/google";
 import Headroom from "react-headroom";
+import Image from "next/image";
+import signature from "../../public/images/signature.png";
+import { useRouter } from "next/router";
 
 const pacifico = Pacifico({
   weight: "400",
@@ -13,6 +16,7 @@ const pacifico = Pacifico({
 const navigation = [
   { name: "About Me", target: "", href: "#aboutMe", current: false },
   { name: "Projects", target: "", href: "#projects", current: false },
+  { name: "Experience", target: "", href: "#experience", current: false },
   {
     name: "Resume",
     target: "_blank",
@@ -27,17 +31,17 @@ function classNames(...classes) {
 }
 
 export default function Navbar() {
-  const text = "< VS />";
+  const router = useRouter();
   return (
     <Headroom className="fixed w-full">
       <Disclosure as="nav">
         {({ open }) => (
           <>
-            <div className=" w-full mx-auto px-2 sm:px-6 lg:px-8 2xl:px-20  py-2 2xl:py-4 bg-col z-30 ">
+            <div className=" w-full mx-auto px-2 sm:px-6 lg:px-8 2xl:px-20 py-2 2xl:py-4 bg-col z-100 ">
               <div className="relative flex h-16 items-center justify-between">
                 <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                   {/* Mobile menu button*/}
-                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                  <Disclosure.Button className="inline-flex items-center justify-center rounded-md p-2 text-gray-300 hover:bg-gray-700 hover:text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                     <span className="sr-only">Open main menu</span>
                     {open ? (
                       <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
@@ -48,15 +52,18 @@ export default function Navbar() {
                 </div>
                 <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
                   <div className="flex flex-shrink-0 items-center">
-                    <a href="/">
-                      {" "}
-                      <p className="text-3xl text-teal">
-                        <i className={pacifico.className}>{text}</i>
-                      </p>{" "}
-                    </a>
+                    <Image
+                      src={signature}
+                      height={200}
+                      width={300}
+                      className="z-20"
+                      onClick={() => {
+                        router.push("/");
+                      }}
+                    />
                   </div>
                   <div className="hidden sm:ml-6 sm:block">
-                    <div className="flex space-x-4">
+                    <div className="flex space-x-4 h-full items-center">
                       {navigation.map((item) => (
                         <a
                           key={item.name}
