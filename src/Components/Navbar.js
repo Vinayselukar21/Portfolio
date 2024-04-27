@@ -5,7 +5,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { Pacifico } from "@next/font/google";
 import Headroom from "react-headroom";
 import Image from "next/image";
-import signature from "../../public/images/signature.png";
+import signature from "../../public/Images/signature.png";
 import { useRouter } from "next/router";
 import { navigation } from "@/Data";
 
