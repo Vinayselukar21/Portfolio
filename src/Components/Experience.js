@@ -11,9 +11,9 @@ export const Experience = () => {
         </h1>
         <div className="flex flex-wrap">
           {experience.map((item) => (
-            <div class="w-full sm:w-full md:w-full lg:w-1/2  lg:pl-2 lg:pr-2 my-2 drop-shadow-2xl rounded">
-              <div class="bg-gray-800   m-h-64 p-1 transform hover:scale-105 transition duration-300 rounded">
-                <div class="p-4 h-auto bg-gray-800 flex flex-col">
+            <div className="w-full sm:w-full md:w-full lg:w-1/2  lg:pl-2 lg:pr-2 my-2 drop-shadow-2xl rounded">
+              <div className="bg-gray-800   m-h-64 p-1 transform hover:scale-105 transition duration-300 rounded">
+                <div className="p-4 h-auto bg-gray-800 flex flex-col">
                   <div className="flex gap-3 items-center">
                     <Image
                       src={item.companyIcon}
@@ -22,20 +22,22 @@ export const Experience = () => {
                       alt="company_logo"
                     />
                     <div className="my-1">
-                      <h5 class="text-white text-2xl font-bold leading-none ">
+                      <h5 className="text-white text-2xl font-bold leading-none ">
                         {item.companyName}
                       </h5>
                       {item.techStack.map((tech) => (
-                        <span class="text-md text-teal font-light">
+                        <span className="text-md text-teal font-light">
                           {tech + "  "}
                         </span>
                       ))}
                     </div>
                   </div>
                   <div>
-                    <ul class="text-s px-5 my-5 text-gray-300 leading-none list-disc">
+                    <ul className="text-s px-5 my-5 text-gray-300 leading-none list-disc">
                       {item.desc.map((desc) => (
-                        <li className="my-2">{desc}</li>
+                        <li>
+                          <p className="my-2 leading-6 ">{desc}</p>
+                        </li>
                       ))}
                     </ul>
                   </div>

@@ -3,7 +3,7 @@ import { aboutMe } from "@/Data";
 
 const AboutMe = () => {
   return (
-    <div className="w-full flex flex-col sm:h-screen" id="aboutMe ">
+    <div className="w-full flex flex-col sm:h-screen" id="aboutMe">
       <h1 className="text-3xl sm:text-5xl text-gray-300 font-black my-5 border-b border-teal pb-5 ">
         About Me.
       </h1>

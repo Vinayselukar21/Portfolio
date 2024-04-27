@@ -7,24 +7,12 @@ import Headroom from "react-headroom";
 import Image from "next/image";
 import signature from "../../public/images/signature.png";
 import { useRouter } from "next/router";
+import { navigation } from "@/Data";
 
 const pacifico = Pacifico({
   weight: "400",
   subsets: ["latin"],
 });
-
-const navigation = [
-  { name: "About Me", target: "", href: "#aboutMe", current: false },
-  { name: "Projects", target: "", href: "#projects", current: false },
-  { name: "Experience", target: "", href: "#experience", current: false },
-  {
-    name: "Resume",
-    target: "_blank",
-    href: "https://drive.google.com/file/d/1PAauRSEI9zx3NAjlTZZ9byNoUeMUvVY4/view?usp=share_link",
-    current: false,
-  },
-  { name: "Contact", target: "", href: "#contact", current: false },
-];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

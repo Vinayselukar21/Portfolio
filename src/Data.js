@@ -7,12 +7,28 @@ import github from "../public/Images/git.png";
 import typescript from "../public/Images/typescript.png";
 import next from "../public/Images/next.png";
 import intelliconnect_logo from "../public/Images/intelliconnect_logo.jpg";
+
+const resumeLink =
+  "https://drive.google.com/file/d/1Dt5PYqnYAqY6rY6CvUzAGEgixnGtXWDl/view";
+
+export const navigation = [
+  { name: "About Me", target: "", href: "/#aboutMe", current: false },
+  { name: "Experience", target: "", href: "/#experience", current: false },
+  { name: "Projects", target: "", href: "/#projects", current: false },
+  {
+    name: "Resume",
+    target: "_blank",
+    href: resumeLink,
+    current: false,
+  },
+  { name: "Contact", target: "", href: "/#contact", current: false },
+];
+
 export const about = {
   name: " Vinay Selukar",
   description:
-    "A passionate web developer specializing in Frontend development, always looking forward to contribute skills and knowledge and learn along the way.",
-  resumeLink:
-    "https://drive.google.com/file/d/1PAauRSEI9zx3NAjlTZZ9byNoUeMUvVY4/view?usp=share_link",
+    "A  Frontend developer aspiring to become a fullstack developer, always looking forward to contribute skills and knowledge and learn along the way.",
+  resumeLink: resumeLink,
   mailTo: "mailto:vselukar2102@gmail.com",
   github: "https://github.com/Vinayselukar21",
   instagram: "https://www.instagram.com/vinayselukar/",
@@ -64,22 +80,32 @@ export const skills = {
 
 export const projects = [
   {
-    title: "DeCarbonUs",
+    title: "Typist",
     tech: ["Next.js,", "React.js,", "Tailwind"],
-    desc: "DeCarbonUs is an App-based solution to help fight climate change by facilitating individuals to reduce and control their carbon footprint.",
-    link: "https://decarbonus.co",
+    desc: "Typist offers users a platform to enhance their typing speed and accuracy through interactive exercises. Track your progress, improve your skills, and master the art of typing effortlessly.",
+    link: "https://typist-t.vercel.app/",
+    repoLink: "https://github.com/Vinayselukar21/Typist",
   },
+  // {
+  //   title: "DeCarbonUs",
+  //   tech: ["Next.js,", "React.js,", "Tailwind"],
+  //   desc: "DeCarbonUs is an App-based solution to help fight climate change by facilitating individuals to reduce and control their carbon footprint.",
+  //   link: "https://decarbonus.co",
+  //   repoLink: "",
+  // },
   {
     title: "Food Order App",
     tech: ["React.js,", "HTML,", "CSS"],
     desc: "The Food Order App is designed to streamline the process of ordering food online, providing users with an intuitive interface to browse, select, and place orders seamlessly.",
-    link: "https://github.com/Vinayselukar21/Food-Order-Web-App",
+    link: "",
+    repoLink: "https://github.com/Vinayselukar21/Food-Order-Web-App",
   },
   {
     title: "NewsiFy",
     tech: ["React.js,", "HTML,", "CSS"],
     desc: "NewsiFy aims to provide a well organized and category divided news feed.",
-    link: "https://github.com/Vinayselukar21/NewsApp-React.js",
+    link: "",
+    repoLink: "https://github.com/Vinayselukar21/NewsApp-React.js",
   },
 ];
 
@@ -90,9 +116,9 @@ export const experience = [
     position: "Associate Software Developer",
     techStack: ["Next.js,", "React.js,", "Tailwind"],
     desc: [
-      "Used Next.js, React Query, Redux, and Zustand for robust frontend development.",
-      "Showcased 20+ Next.js-designed pages emphasizing responsiveness and functionality.",
-      "Demonstrated React Query's impact on real-time updates and efficient data handling.",
+      "I played a key role in enhancing four major projects: an admin tool, order-taking system, ERP, and profit tracker.",
+      "Crafted over 20 sleek and functional pages using Next.js, prioritizing seamless responsiveness across devices.",
+      "Leveraged React Query to deliver dynamic, real-time updates and streamline data management effectively.",
       "Highlighted Redux/Zustand usage for maintaining scalable and performant state management.",
     ],
   },
