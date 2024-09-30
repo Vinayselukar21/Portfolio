@@ -11,12 +11,12 @@ import Head from "next/head";
 import Image from "next/image";
 import { useEffect } from "react";
 import upicon from "../../public/icons/top-icon.png";
+import localFont from "@next/font/local";
 
-const roboto = Roboto({
-  weight: "400",
-  subsets: ["latin"],
+const jetbrains = localFont({
+  src: "../../public/fonts/JetBrains.woff2",
+  variable: "--font-jetbrains",
 });
-
 export default function Home() {
   function TopEvent() {
     document.body.scrollTop = 0; // For Safari
@@ -49,7 +49,8 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className={roboto.className}>
+      <div className={jetbrains.className}>
+        {/* <div> */}
         <Navbar />
         <Layout>
           <About />

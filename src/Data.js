@@ -115,6 +115,10 @@ export const experience = [
     companyIcon: intelliconnect_logo,
     position: "Associate Software Developer",
     techStack: ["Next.js,", "React.js,", "Tailwind"],
+    country: "India",
+    type: "Remote",
+    joining: "March 2023",
+    leaving: "Present",
     desc: [
       "I played a key role in enhancing four major projects: an admin tool, order-taking system, ERP, and profit tracker.",
       "Crafted over 20 sleek and functional pages using Next.js, prioritizing seamless responsiveness across devices.",

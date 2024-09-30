@@ -10,6 +10,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-jetbrains)", "sans-serif"],
+        serif: ["var(--font-jetbrains)", "serif"],
+      },
       backgroundImage: (theme) => ({
         "gradient-blue":
           "linear-gradient(45deg, rgba(0,142,255,1) 0%, rgba(73,80,83,1) 21%, rgba(17,81,111,1) 48%, rgba(8,97,139,1) 66%, rgba(31,66,82,1) 90%)",

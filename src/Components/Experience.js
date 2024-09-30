@@ -9,27 +9,35 @@ export const Experience = () => {
         <h1 className="text-3xl sm:text-5xl text-gray-300 font-black my-5 border-b border-teal pb-5 ">
           Experience
         </h1>
-        <div className="flex flex-wrap">
+        <div className="flex flex-col flex-wrap gap-8">
           {experience.map((item) => (
-            <div className="w-full sm:w-full md:w-full lg:w-1/2  lg:pl-2 lg:pr-2 my-2 drop-shadow-2xl rounded">
-              <div className="bg-gray-800   m-h-64 p-1 transform hover:scale-105 transition duration-300 rounded">
-                <div className="p-4 h-auto bg-gray-800 flex flex-col">
-                  <div className="flex gap-3 items-center">
-                    <Image
-                      src={item.companyIcon}
-                      height={90}
-                      width={90}
-                      alt="company_logo"
-                    />
-                    <div className="my-1">
-                      <h5 className="text-white text-2xl font-bold leading-none ">
-                        {item.companyName}
-                      </h5>
-                      {item.techStack.map((tech) => (
-                        <span className="text-md text-teal font-light">
-                          {tech + "  "}
-                        </span>
-                      ))}
+            <div className="w-full sm:w-full md:w-full lg:pl-2 lg:pr-2 border border-teal rounded-xl">
+              <div className="m-h-64 p-1 ">
+                <div className="p-4 h-auto flex flex-col">
+                  <div className="md:flex justify-between">
+                    <div className="flex gap-3 items-center">
+                      <Image
+                        src={item.companyIcon}
+                        height={90}
+                        width={90}
+                        alt="company_logo"
+                        className="h-12 w-12"
+                      />
+                      <div className="my-1">
+                        <h5 className="text-white md:text-2xl font-bold leading-none ">
+                          {item.companyName}
+                        </h5>
+                      </div>
+                    </div>
+                    <div>
+                      <div className="flex gap-2 items-center text-white text-xs md:text-md font-bold leading-none mt-3 ">
+                        <div>{item.type},</div>
+                        <div>{item.country}</div>
+                        <div className="mx-2 border-4 border-teal rounded-full h-1 w-1 "></div>
+                        <div className="text-teal">
+                          {item.joining} - {item.leaving}
+                        </div>
+                      </div>
                     </div>
                   </div>
                   <div>
@@ -40,6 +48,14 @@ export const Experience = () => {
                         </li>
                       ))}
                     </ul>
+                  </div>
+                  <div className="flex gap-2 flex-wrap">
+                    <span className="text-white"> &#123;&#125;</span>
+                    {item.techStack.map((tech) => (
+                      <span className="text-md text-teal font-light">
+                        {tech + "  "}
+                      </span>
+                    ))}
                   </div>
                 </div>
               </div>
