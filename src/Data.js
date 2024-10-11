@@ -5,6 +5,8 @@ import javascript from "../public/Images/js.png";
 import react from "../public/Images/react.png";
 import github from "../public/Images/git.png";
 import typescript from "../public/Images/typescript.png";
+import node from "../public/Images/nodejs.png";
+import express from "../public/Images/expressjs.png";
 import next from "../public/Images/next.png";
 import intelliconnect_logo from "../public/Images/intelliconnect_logo.jpg";
 
@@ -27,7 +29,7 @@ export const navigation = [
 export const about = {
   name: " Vinay Selukar",
   description:
-    "A  Frontend developer aspiring to become a fullstack developer, always looking forward to contribute skills and knowledge and learn along the way.",
+    "Frontend developer with full-stack aspirations, eager to contribute skills and knowledge and learn along the way.",
   resumeLink: resumeLink,
   mailTo: "mailto:vselukar2102@gmail.com",
   github: "https://github.com/Vinayselukar21",
@@ -55,10 +57,6 @@ export const aboutMe = {
       icon: javascript,
     },
     {
-      name: "Typescript",
-      icon: typescript,
-    },
-    {
       name: "React.js",
       icon: react,
     },
@@ -66,6 +64,15 @@ export const aboutMe = {
       name: "Next.js",
       icon: next,
     },
+    {
+      name: "Node.js",
+      icon: node,
+    },
+    {
+      name: "Express.js",
+      icon: express,
+    },
+
     {
       name: "Github",
       icon: github,

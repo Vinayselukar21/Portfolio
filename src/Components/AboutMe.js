@@ -32,7 +32,7 @@ const AboutMe = () => {
                   alt={skill.name}
                   className="mx-3 my-3 invert  "
                   height={50}
-                  width={50}
+                  // width={50}
                   src={skill.icon}
                 />
                 <p className="text-center text-gray-300 text-xs">
