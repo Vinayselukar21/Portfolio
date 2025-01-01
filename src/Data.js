@@ -88,7 +88,7 @@ export const skills = {
 export const projects = [
  {
     title: "Vomegle",
-    tech: ["React.js,","Tailwind","WebRTC","Nodejs","Socket.io", "Typescript"],
+    tech: ["React.js,","Tailwind,","WebRTC,","Nodejs,","Socket.io,", "Typescript"],
     desc: "Developed Vomegle, a video chat app clone of Omegle, using WebRTC with a signaling server built in Node.js, Express, and Socket.io. Implemented in TypeScript, hosting the frontend on Vercel and backend on Render for seamless performance.",
     link: "https://vomegle.vercel.app/",
     repoLink: "https://github.com/Vinayselukar21/vomegle",
@@ -99,28 +99,7 @@ export const projects = [
     desc: "Typist offers users a platform to enhance their typing speed and accuracy through interactive exercises. Track your progress, improve your skills, and master the art of typing effortlessly.",
     link: "https://typist-t.vercel.app/",
     repoLink: "https://github.com/Vinayselukar21/Typist",
-  },
-  // {
-  //   title: "DeCarbonUs",
-  //   tech: ["Next.js,", "React.js,", "Tailwind"],
-  //   desc: "DeCarbonUs is an App-based solution to help fight climate change by facilitating individuals to reduce and control their carbon footprint.",
-  //   link: "https://decarbonus.co",
-  //   repoLink: "",
-  // },
-  {
-    title: "Food Order App",
-    tech: ["React.js,", "HTML,", "CSS"],
-    desc: "The Food Order App is designed to streamline the process of ordering food online, providing users with an intuitive interface to browse, select, and place orders seamlessly.",
-    link: "",
-    repoLink: "https://github.com/Vinayselukar21/Food-Order-Web-App",
-  },
-  {
-    title: "NewsiFy",
-    tech: ["React.js,", "HTML,", "CSS"],
-    desc: "NewsiFy aims to provide a well organized and category divided news feed.",
-    link: "",
-    repoLink: "https://github.com/Vinayselukar21/NewsApp-React.js",
-  },
+  }
 ];
 
 export const experience = [
