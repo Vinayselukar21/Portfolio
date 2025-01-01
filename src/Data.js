@@ -86,9 +86,16 @@ export const skills = {
 };
 
 export const projects = [
+ {
+    title: "Vomegle",
+    tech: ["React.js,","Tailwind","WebRTC","Nodejs","Socket.io", "Typescript"],
+    desc: "Developed Vomegle, a video chat app clone of Omegle, using WebRTC with a signaling server built in Node.js, Express, and Socket.io. Implemented in TypeScript, hosting the frontend on Vercel and backend on Render for seamless performance.",
+    link: "https://vomegle.vercel.app/",
+    repoLink: "https://github.com/Vinayselukar21/vomegle",
+  },
   {
     title: "Typist",
-    tech: ["Next.js,", "React.js,", "Tailwind"],
+    tech: ["Next.js,", "Tailwind"],
     desc: "Typist offers users a platform to enhance their typing speed and accuracy through interactive exercises. Track your progress, improve your skills, and master the art of typing effortlessly.",
     link: "https://typist-t.vercel.app/",
     repoLink: "https://github.com/Vinayselukar21/Typist",
