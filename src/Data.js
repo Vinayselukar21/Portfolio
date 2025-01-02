@@ -11,7 +11,7 @@ import next from "../public/Images/next.png";
 import intelliconnect_logo from "../public/Images/intelliconnect_logo.jpg";
 
 const resumeLink =
-  "https://drive.google.com/file/d/1Dt5PYqnYAqY6rY6CvUzAGEgixnGtXWDl/view";
+  "https://drive.google.com/file/d/1-Jfp4LNK9Qq-TiW9kzl5cODakfF1TA7J/view?usp=sharing";
 
 export const navigation = [
   { name: "About Me", target: "", href: "/#aboutMe", current: false },
